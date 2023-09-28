@@ -1,38 +1,71 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: Arial, sans-serif;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
+  color: #ff5555;
+}
+.content-todo{
+  background: linear-gradient(to bottom, #ff7733, #f0c8b4); /* Gradiente de exemplo */
+  height: 100vh;
+}
+.content {
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  height: 50vh !important;
+  margin: 0 auto;
+  top: 100px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  /* Alinhe os itens verticalmente no centro */
+}
+
+.list {
+  text-align: left;
+  max-height: 170px;
+  /* Defina a altura máxima para a lista */
+  overflow-y: auto;
+  /* Habilita a rolagem vertical quando necessário */
+}
+
+li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f75c5c;
+color: #ff5555;
+}
+
+.input {
+  background-color: #ffffff;
+  padding-left: 10px;
+  border: 1px solid #ff5555;
+  outline: none;
+  height: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.button-add {
+  border-radius: 0 20px 20px 0;
+  width: 25%;
+}
+
+button {
+  background-color: #ff5555;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  padding: 4px;
+  cursor: pointer;
 }
