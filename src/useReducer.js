@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useReducer } from 'react';
 //Inicializando useContext
-function useContext() {
+function UseReducer() {
 
 }
-export default useContext;
+export default UseReducer;
