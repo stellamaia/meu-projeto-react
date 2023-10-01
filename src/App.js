@@ -19,8 +19,8 @@ function App() {
       </ul> */}
       {/* Switch é onde vou definir as rotas */}
       <Routes>
-      <Route path="/" element={<UseState/>}></Route>
-      <Route path="/use-effect" element={<UseEffectExample/>}></Route>
+      <Route path="/"            element={<UseState/>}></Route>
+      <Route path="/use-effect"  element={<UseEffectExample/>}></Route>
       <Route path="/use-context" element={<UseContext/>}></Route>
       <Route path="/use-reducer" element={<UseReducer/>}></Route>
 
