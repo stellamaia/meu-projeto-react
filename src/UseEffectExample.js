@@ -1,3 +1,7 @@
+
+//useEffect: Este hook permite que você realize efeitos colaterais em componentes funcionais.
+//Como buscar dados de uma API, manipular o DOM, ou assinar eventos.
+// Ele é usado para substituir o ciclo de vida de componentes de classe componentDidMount, componentDidUpdate e componentWillUnmount.
 import React, { useState, useEffect } from 'react';
 
 //Usar algum efeito, fazer algo a partir de alguma ação nossa
@@ -20,6 +24,20 @@ useEffect(()=>{
 // 3 - array de dependências vazio
 // o UseEffect só vai ser executado quando a página carregar
 console.log("Só executa uma vez!")
+
+// 4 - clean up function - limpeza 
+//O timer vai rodar quando o meu count mudar e vai mapear o número de click em 2 segundos
+useEffect(() => {
+    const timer = setTimeout(() =>{
+        console.log(`O incrementador foi alterado ${count} vezes.`);
+
+    }, 2000);
+    return () =>{
+        clearTimeout(timer);
+    }
+},[count]);
+
+
 return (
     <div className='App'> 
     <div>
@@ -38,20 +56,6 @@ return (
 }
 
 export default UseEffectExample;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
