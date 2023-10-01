@@ -5,6 +5,7 @@
 import React, { useContext } from 'react';
 //Inicializando useContext
 
+//é criado um contexto utilizando React.createContext()
 const MyContext = React.createContext();
 function UseContext() {
     return (
