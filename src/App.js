@@ -6,7 +6,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UseState from './UseState';
 import UseEffectExample from './UseEffectExample';
-import { UseContext } from './UseContext';
+import  UseContext  from './UseContext';
+import  UseReducer  from './UseReducer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/" element={<UseState/>}></Route>
       <Route path="/use-effect" element={<UseEffectExample/>}></Route>
       <Route path="/use-context" element={<UseContext/>}></Route>
+      <Route path="/use-reducer" element={<UseReducer/>}></Route>
 
       </Routes>
     </Router>
