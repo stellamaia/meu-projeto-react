@@ -4,7 +4,7 @@ import './App.css';
 //configuraçao router
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TodoList from './TodoList';
+import UseState from './UseState';
 import UseEffectExample from './UseEffectExample';
 
 
@@ -18,7 +18,7 @@ function App() {
       </ul> */}
       {/* Switch é onde vou definir as rotas */}
       <Routes>
-      <Route path="/" element={<TodoList/>}></Route>
+      <Route path="/" element={<UseState/>}></Route>
         <Route path="/use-effect" element={<UseEffectExample/>}></Route>
       </Routes>
     </Router>

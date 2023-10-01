@@ -1,8 +1,8 @@
 // Importa os módulos React e useState do React
 import React, { useState } from 'react';
 
-// Define o componente TodoList como uma função
-function TodoList() {
+// Define o componente UseState como uma função
+function UseState() {
     // Define três estados usando o hook useState: 'todos', 'task' e 'showAlert'
     const [todos, setTodos] = useState([]); // Armazena a lista de tarefas
     const [task, setTask] = useState(''); // Armazena a tarefa atual
@@ -32,7 +32,7 @@ function TodoList() {
         setTodos(newTodos); // Atualiza o estado 'todos'
     };
 
-    // Renderiza o componente TodoList
+    // Renderiza o componente UseState
     return (
         <div className='content-todo'>
             <div className='content'>
@@ -65,5 +65,5 @@ function TodoList() {
     );
 }
 
-// Exporta o componente TodoList para ser usado em outros lugares
-export default TodoList;
+// Exporta o componente UseState para ser usado em outros lugares
+export default UseState;
