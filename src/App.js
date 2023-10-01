@@ -6,7 +6,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import UseState from './UseState';
 import UseEffectExample from './UseEffectExample';
-
+import { UseContext } from './UseContext';
 
 function App() {
   return (
@@ -19,7 +19,9 @@ function App() {
       {/* Switch é onde vou definir as rotas */}
       <Routes>
       <Route path="/" element={<UseState/>}></Route>
-        <Route path="/use-effect" element={<UseEffectExample/>}></Route>
+      <Route path="/use-effect" element={<UseEffectExample/>}></Route>
+      <Route path="/use-context" element={<UseContext/>}></Route>
+
       </Routes>
     </Router>
 
