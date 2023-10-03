@@ -3,6 +3,7 @@
 import React, { useReducer } from 'react';
 //Inicializando useReducer
 //inicializar variavel
+import NavBar from './NavBar';
 
 const initialState = { count: 0 };
 
@@ -63,11 +64,16 @@ function UseReducer() {
     };
     
     return (
+        <div>
+        <NavBar />
         <div style={rootStyle}>
+      
         <div style={containerStyle}>
+            
             <p style={textStyle}>Contagem:{state.count}</p>
             <button style={buttonStyleIncrement} onClick={() => dispatch({ type: 'increment' })}>Incrementar</button>
             <button style={buttonStyleDecrement} onClick={() => dispatch({ type: 'decrement' })}>Descrementar</button>
+        </div>
         </div>
         </div>
     )
