@@ -3,6 +3,7 @@
 //Como buscar dados de uma API, manipular o DOM, ou assinar eventos.
 // Ele é usado para substituir o ciclo de vida de componentes de classe componentDidMount, componentDidUpdate e componentWillUnmount.
 import React, { useState, useEffect } from 'react';
+import NavBar from './NavBar';
 
 //Usar algum efeito, fazer algo a partir de alguma ação nossa
 function UseEffectExample() {
@@ -40,6 +41,7 @@ useEffect(() => {
 
 return (
     <div className='App'> 
+       <NavBar />
     <div>
     <button onClick={() => setCount(prevCount => prevCount + 1)}>Renderizar</button>
         <p>{count}</p>
