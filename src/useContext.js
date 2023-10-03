@@ -4,6 +4,7 @@
 
 import React, { useContext } from 'react';
 //Inicializando useContext
+import NavBar from './NavBar';
 
 //é criado um contexto utilizando React.createContext()
 const MyContext = React.createContext();
@@ -19,6 +20,8 @@ function UseContext() {
 function UseState() {
     // Usando o hook useContext para acessar o contexto
     const contextData = useContext(MyContext);
-    return <div>{contextData}</div>;
+    return <div>
+        <NavBar />
+        {contextData}</div>;
 }
 export default UseContext;
