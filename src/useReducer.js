@@ -31,7 +31,7 @@ function UseReducer() {
     const containerStyle = {
         margin: '10px',
         padding: '10px',
-        border: '1px solid red',
+        border: '1px solid black',
         borderRadius: '5px',
         textAlign: 'center',
         width:'70%',
