@@ -1,5 +1,6 @@
 // Importa os módulos React e useState do React
 import React, { useState } from 'react';
+import NavBar from './NavBar';
 
 // Define o componente UseState como uma função
 function UseState() {
@@ -35,6 +36,9 @@ function UseState() {
     // Renderiza o componente UseState
     return (
         <div className='content-todo'>
+
+            <NavBar />
+
             <div className='content'>
                 <h1 className='title'>Lista de Tarefas</h1>
                 <input
