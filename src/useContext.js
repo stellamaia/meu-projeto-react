@@ -10,7 +10,7 @@ import NavBar from './NavBar';
 const MyContext = React.createContext();
 function UseContext() {
     return (
-        <MyContext.Provider value={'Dados do contexto'}>
+        <MyContext.Provider value={'Dados do contexto Use-Context'}>
             <UseState />
         </MyContext.Provider>
     );
