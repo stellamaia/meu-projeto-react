@@ -32,7 +32,7 @@ useEffect(() => {
     const timer = setTimeout(() =>{
         console.log(`O incrementador foi alterado ${count} vezes.`);
 
-    }, 2000);
+    }, 1000);
     return () =>{
         clearTimeout(timer);
     }
