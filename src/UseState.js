@@ -54,7 +54,7 @@ function UseState() {
                 </button>
 
                 {todos.length === 0 ? (
-                    <p>A lista de tarefas está vazia.</p>
+                    <p className='listDescription'>A lista de tarefas está vazia.</p>
                 ) : (
                     <ul className='list'>
                         {todos.map((todo, index) => (
