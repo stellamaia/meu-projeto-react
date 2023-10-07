@@ -1,6 +1,6 @@
 //useContext: Este hook permite que você acesse o contexto (context) de um componente. 
-//É útil para passar dados e funções entre componentes sem a necessidade de passar props manualmente através da hierarquia de componentes
-
+//É útil para passar dados e funções entre componentes sem a necessidade 
+//de passar props manualmente através da hierarquia de componentes
 
 import React, { useContext } from 'react';
 //Inicializando useContext
@@ -10,18 +10,21 @@ import NavBar from './NavBar';
 const MyContext = React.createContext();
 function UseContext() {
     return (
-        <MyContext.Provider value={'Dados do contexto Use-Context'}>
-            <UseState />
+        <MyContext.Provider value={'Dados do ContextData'}>
+            <DataDisplay />
         </MyContext.Provider>
     );
-
-
 }
-function UseState() {
+function DataDisplay() {
     // Usando o hook useContext para acessar o contexto
     const contextData = useContext(MyContext);
-    return <div>
-        <NavBar />
-        {contextData}</div>;
+    return (
+        <div>
+            <NavBar />
+            <p>Dados do UseContext</p>
+            {contextData}
+        </div>
+    );
+
 }
 export default UseContext;
